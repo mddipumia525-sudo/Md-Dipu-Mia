@@ -1,0 +1,194 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#111827;
+color:white;
+}
+
+header{
+position:fixed;
+width:100%;
+background:#1f2937;
+padding:15px 10%;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+}
+
+.logo span{
+color:#00d9ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:150px 10%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:550px;
+}
+
+.hero h1{
+font-size:55px;
+margin:10px 0;
+}
+
+.hero h2{
+color:#00d9ff;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:#00d9ff;
+color:#111;
+margin-top:20px;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+}
+
+.hero-img img{
+width:350px;
+border-radius:50%;
+border:6px solid #00d9ff;
+}
+
+section{
+padding:90px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1f2937;
+padding:30px;
+text-align:center;
+border-radius:12px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:45px;
+color:#00d9ff;
+margin-bottom:20px;
+}
+
+.skill{
+margin:20px 0;
+}
+
+.bar{
+background:#333;
+height:10px;
+border-radius:20px;
+}
+
+.bar span{
+display:block;
+height:10px;
+background:#00d9ff;
+border-radius:20px;
+}
+
+.social{
+text-align:center;
+margin-top:20px;
+}
+
+.social a{
+font-size:30px;
+margin:0 15px;
+color:white;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#1f2937;
+}
+
+.menu-btn{
+display:none;
+font-size:25px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+position:absolute;
+top:70px;
+left:0;
+background:#1f2937;
+width:100%;
+flex-direction:column;
+}
+
+nav ul.active{
+display:flex;
+}
+
+nav ul li{
+margin:20px;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero-img img{
+margin-top:40px;
+width:250px;
+}
+
+}
